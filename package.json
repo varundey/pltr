@@ -1,0 +1,11 @@
+{
+  "name": "pltr",
+  "version": "1.0.0",
+  "description": "A browser extension which tells you how much page of the page you've read and how much is left to read.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Varun Dey",
+  "license": "MIT"
+}
