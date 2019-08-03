@@ -2,6 +2,13 @@
   "manifest_version": 2,
   "name": "pltr",
   "version": "1.0.0",
+  "description": "A dead simple extension which tells you how much ",
+  "author": "Varun Dey",
+
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
