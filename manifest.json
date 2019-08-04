@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "pltr",
-  "version": "1.0.0",
-  "description": "A dead simple extension which tells you how much ",
+  "version": "1.0.1",
+  "description": "Page left to read (pltr) will tell you the progress you have made on reading the article by adding a small ribbon to the top of the page.",
   "author": "Varun Dey",
 
   "icons": {
@@ -12,6 +12,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
+      "permissions": "activeTab",
       "js": ["src/index.js"],
       "css": ["src/index.css"],
       "all_frames": false
