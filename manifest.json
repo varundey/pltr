@@ -13,7 +13,6 @@
     {
       "matches": ["<all_urls>"],
       "js": ["src/pltr.js"],
-      "css": ["src/styles/pltr.css"],
       "all_frames": false
     }
   ]

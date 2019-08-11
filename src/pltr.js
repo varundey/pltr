@@ -1,3 +1,5 @@
+import './styles/pltr.css'
+
 const bodyNode = document.body;
 const progressNode = document.createElement('div');
 progressNode.setAttribute('class', 'pltr');

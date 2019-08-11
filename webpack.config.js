@@ -16,5 +16,14 @@ module.exports = {
         new CleanWebpackPlugin({
             verbose: true
         })
-    ]
+    ],
+    module: {
+        rules: [{
+            test: /\.css$/,
+            use: [
+                'style-loader',
+                'css-loader'
+            ]
+        }]
+    }
 };
