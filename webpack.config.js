@@ -12,7 +12,11 @@ module.exports = {
         new CopyPlugin([{
             from: 'manifest.json',
             to: path.resolve(__dirname, 'dist')
-        }]),
+        }, {
+            from: 'images/',
+            to: path.resolve(__dirname, 'dist/images')
+        }
+        ]),
         new CleanWebpackPlugin({
             verbose: true
         })
