@@ -4,8 +4,14 @@
   "description": "A browser extension which tells you how much page of the page you've read and how much is left to read.",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Varun Dey",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
 }
