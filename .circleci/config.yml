@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/node:7.10
-
     working_directory: ~/pltr
 
     steps:
@@ -24,6 +23,12 @@ jobs:
           name: Build pltr
           command: npm run build
       - run:
+          name: Create zip file
+          command: |
+            cd dist/
+            zip -r pltr.zip pltr/
+            cd ..
+      - run:
           name: Setup git config
           command: |
             git config user.name 'CircleCI'
@@ -31,9 +36,15 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "76:ff:9f:86:58:19:75:66:ff:13:eb:34:71:4a:62:d8"
+      -run:
+        name: Get pltr version
+        command:  |
+          export PLTR_VERSION=`sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json`
+          echo $PLTR_VERSION
       - run:
           name: Deploy pltr
           command: |
             git add dist/
-            git commit --allow-empty -m "pltr deploy commit [skip ci]"
-            git push -u origin ci-test
+            git commit --allow-empty -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
+            git tag $PLTR_VERSION
+            git push -u origin `git rev-parse --abbrev-ref HEAD`

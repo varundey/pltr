@@ -4,7 +4,9 @@
   "description": "A browser extension which tells you how much page of the page you've read and how much is left to read.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "clean-build": "rm -r dist/*",
+    "dev": "npm run clean-build && webpack --mode development",
+    "build": "npm run clean-build && webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Varun Dey",
