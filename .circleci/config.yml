@@ -8,9 +8,6 @@ jobs:
 
     steps:
       - checkout
-      - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@next'
       - restore_cache:
           keys:
             - dependencies-cache-{{ checksum "package.json" }}
