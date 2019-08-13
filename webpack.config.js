@@ -1,6 +1,5 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/pltr.js',
@@ -16,10 +15,7 @@ module.exports = {
             from: 'images/',
             to: path.resolve(__dirname, 'dist/pltr/images')
         }
-        ]),
-        new CleanWebpackPlugin({
-            verbose: true
-        })
+        ])
     ],
     module: {
         rules: [{
