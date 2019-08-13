@@ -36,7 +36,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "76:ff:9f:86:58:19:75:66:ff:13:eb:34:71:4a:62:d8"
-      -run:
+      - run:
         name: Get pltr version
         command:  |
           export PLTR_VERSION=`sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json`
