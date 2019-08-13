@@ -6,15 +6,15 @@ module.exports = {
     entry: './src/pltr.js',
     output: {
         filename: 'pltr.js',
-        path: path.resolve(__dirname, 'dist/src')
+        path: path.resolve(__dirname, 'dist/pltr/src')
     },
     plugins: [
         new CopyPlugin([{
             from: 'manifest.json',
-            to: path.resolve(__dirname, 'dist')
+            to: path.resolve(__dirname, 'dist/pltr')
         }, {
             from: 'images/',
-            to: path.resolve(__dirname, 'dist/images')
+            to: path.resolve(__dirname, 'dist/pltr/images')
         }
         ]),
         new CleanWebpackPlugin({

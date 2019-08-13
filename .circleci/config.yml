@@ -24,6 +24,12 @@ jobs:
           name: Build pltr
           command: npm run build
       - run:
+          name: Create zip file
+          command: |
+            cd dist/
+            zip -r pltr.zip pltr/
+            cd ..
+      - run:
           name: Setup git config
           command: |
             git config user.name 'CircleCI'
