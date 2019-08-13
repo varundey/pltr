@@ -44,6 +44,7 @@ jobs:
       - run:
           name: Deploy pltr
           command: |
+            echo $PLTR_VERSION
             git add dist/
             git commit --allow-empty -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
             git tag $PLTR_VERSION
