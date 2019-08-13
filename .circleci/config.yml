@@ -44,7 +44,7 @@ jobs:
       - run:
           name: Setup Environment Variables
           command: |
-            echo `sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json` >> $PLTR_VERSION
+            PLTR_VERSION=$(sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json)
       - run:
           name: Deploy pltr
           command: |
