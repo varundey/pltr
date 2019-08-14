@@ -51,9 +51,10 @@ jobs:
           name: Deploy pltr
           command: |
             echo xyz
+            export PLTR_VERSION=`sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json`
             echo $PLTR_VERSION
             echo 123
             git add dist/
             git commit --allow-empty -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
             git tag $PLTR_VERSION
-            git push -u origin `git rev-parse --abbrev-ref HEAD`
+            git push -u origin tag $PLTR_VERSION
