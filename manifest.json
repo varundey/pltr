@@ -1,13 +1,16 @@
 {
   "manifest_version": 2,
   "name": "pltr",
-  "version": "1.0.1",
-  "description": "pltr will tell you the progress you have made on reading the article by adding a small ribbon to the top of the page.",
+  "version": "1.0.2",
+  "description": "Get the reading progress of the page right on top of your screen",
   "author": "Varun Dey",
-
+  "homepage_url": "https://github.com/varundey/pltr",
   "icons": {
     "16": "images/icon16.png",
-    "48": "images/icon48.png"
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "64": "images/icon64.png",
+    "128": "images/icon128.png"
   },
   "content_scripts": [
     {
