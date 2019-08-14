@@ -38,8 +38,10 @@ jobs:
           fingerprints:
             - "76:ff:9f:86:58:19:75:66:ff:13:eb:34:71:4a:62:d8"
       - run:
-          name: Deploy pltr
+          name: Deploy pltr from manifest version
           command: |
+            export PLTR_VERSION=`sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json`
             git add dist/
-            git commit --allow-empty -m "pltr deploy commit [skip ci]"
-            git push -u origin master
+            git commit --allow-empty -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
+            git tag $PLTR_VERSION
+            git push -u origin tag $PLTR_VERSION
