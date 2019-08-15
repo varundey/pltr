@@ -1,9 +1,12 @@
-[![Chrome web store](https://raw.githubusercontent.com/varundey/pltr/master/assets/chrome%20web%20store.png)](https://chrome.google.com/webstore/detail/pltr/jnandbgcohcjgonlhmgpjlcpbkaccbnk)
-[![Firefox Add-ons](https://raw.githubusercontent.com/varundey/pltr/master/assets/firefox%20add-ons.png)](https://addons.mozilla.org/en-US/firefox/addon/pltr/)
 [![CircleCI](https://circleci.com/gh/varundey/pltr/tree/master.svg?style=svg)](https://circleci.com/gh/varundey/pltr/tree/master)
+
 # pltr
 
 pltr is a browser extension which helps you show the progress you have made with the page as you scroll through
+
+[![Chrome web store](https://raw.githubusercontent.com/varundey/pltr/master/assets/chrome%20web%20store.png)](https://chrome.google.com/webstore/detail/pltr/jnandbgcohcjgonlhmgpjlcpbkaccbnk)
+[![Firefox Add-ons](https://raw.githubusercontent.com/varundey/pltr/master/assets/firefox%20add-ons.png)](https://addons.mozilla.org/en-US/firefox/addon/pltr/)
+
 
 ## Demo:
 pltr adds a small ribbon to the top of the page on page load:
@@ -13,7 +16,7 @@ As you progress through the page, pltr ribbon starts filling width of the screen
 ![pltr ribbon filling width of page on scrolling to the bottom](https://raw.githubusercontent.com/varundey/pltr/master/assets/page%20scrolled%20screenshot.png "Page scrolled")
 
 Here's a video for a better demo
-![pltr video demo showing how the ribbon advances on page progress](https://raw.githubusercontent.com/varundey/pltr/master/assets/pltr%20video.mov "pltr video demo")
+![pltr video demo showing how the ribbon advances on page progress](https://raw.githubusercontent.com/varundey/pltr/master/assets/pltr%20video.gif "pltr video demo")
 
 ## Inspiration
 I read a lot of articles on mobile when I am traveling to and from my office. A big part of me deciding whether to read the article at that time or to just save it for reading later solely depends on how lengthy it is. Since I use Firefox for Android and knowing Firefox supports installing add-ons on Android, I decided to solve my own problem.
