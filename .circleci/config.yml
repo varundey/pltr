@@ -26,9 +26,8 @@ jobs:
       - run:
           name: Create zip file
           command: |
-            cd dist/
-            zip -r pltr.zip pltr/
-            cd ..
+            cd dist/pltr
+            zip -r ../pltr.zip . -x "*/."
       - run:
           name: Setup git config
           command: |
