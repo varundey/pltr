@@ -45,5 +45,6 @@ jobs:
               git add dist/
               git commit -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
               git tag $PLTR_VERSION
+              git push
               git push -u origin tag $PLTR_VERSION
             fi
