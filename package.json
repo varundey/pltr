@@ -1,8 +1,7 @@
 {
   "name": "pltr",
   "version": "1.0.0",
-  "description": "A browser extension which tells you how much page of the page you've read and how much is left to read.",
-  "main": "index.js",
+  "description": "A browser extension which shows you the page progress as you advance through the page",
   "scripts": {
     "clean-build": "rm -r dist/*",
     "dev": "npm run clean-build && webpack --mode development",
@@ -12,7 +11,6 @@
   "author": "Varun Dey",
   "license": "MIT",
   "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "style-loader": "^1.0.0",
