@@ -39,8 +39,11 @@ jobs:
       - run:
           name: Deploy pltr from manifest version
           command: |
-            export PLTR_VERSION=`sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json`
-            git add dist/
-            git commit --allow-empty -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
-            git tag $PLTR_VERSION
-            git push -u origin tag $PLTR_VERSION
+            PLTR_VERSION=$(sed -n 's/.*"version": "\(.*\)",/\1/p' manifest.json)
+            LATEST_TAG=$(git describe --tags  $(git rev-list --tags --max-count=1))
+            if [[ $PLTR_VERSION != $ LATEST_TAG]]; then
+              git add dist/
+              git commit -m "pltr deploy v$PLTR_VERSION :rocket: [skip ci]"
+              git tag $PLTR_VERSION
+              git push -u origin tag $PLTR_VERSION
+            fi
