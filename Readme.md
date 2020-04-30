@@ -7,6 +7,7 @@ pltr is a browser extension which helps you show the progress you have made with
 [![Chrome web store](https://raw.githubusercontent.com/varundey/pltr/master/assets/chrome%20web%20store.png)](https://chrome.google.com/webstore/detail/pltr/jnandbgcohcjgonlhmgpjlcpbkaccbnk)
 [![Firefox Add-ons](https://raw.githubusercontent.com/varundey/pltr/master/assets/firefox%20add-ons.png)](https://addons.mozilla.org/en-US/firefox/addon/pltr/)
 [![Opera addons](https://raw.githubusercontent.com/varundey/pltr/master/assets/opera%20addons.png)](https://addons.opera.com/en/extensions/details/pltr/)
+[![Edge Add-ons](https://raw.githubusercontent.com/varundey/pltr/master/assets/microsoft%20add-ons.png)](https://microsoftedge.microsoft.com/addons/detail/innnpngkjjjanfadleaidackgdppicab)
 
 
 ## Demo:
