@@ -9,6 +9,24 @@ pltr is a browser extension which helps you show the progress you have made with
 [![Opera addons](https://raw.githubusercontent.com/varundey/pltr/master/assets/opera%20addons.png)](https://addons.opera.com/en/extensions/details/pltr/)
 [![Edge Add-ons](https://raw.githubusercontent.com/varundey/pltr/master/assets/microsoft%20add-ons.png)](https://microsoftedge.microsoft.com/addons/detail/innnpngkjjjanfadleaidackgdppicab)
 
+## Permissions
+
+pltr is designed to be minimally invasive and uses only the necessary permissions to function:
+
+### Host Permissions
+- `<all_urls>`: This permission is required to allow the extension to add the progress bar to any webpage you visit. The extension only:
+  - Adds a small progress bar element at the top of the page
+  - Monitors scroll position to update the progress bar
+  - Does not read, modify, or collect any page content
+  - Does not track your browsing history or send any data anywhere
+
+### Chrome API Permissions
+- None! pltr doesn't require any special Chrome API permissions. It operates entirely using standard DOM APIs to:
+  - Create and style the progress bar
+  - Listen to scroll events
+  - Calculate page progress
+
+We believe in transparency and minimal permissions. The extension's source code is open and available for review in this repository.
 
 ## Demo:
 pltr adds a small ribbon to the top of the page on page load:
