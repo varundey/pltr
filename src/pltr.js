@@ -1,4 +1,15 @@
-import './styles/pltr.css'
+// Add progress bar styles
+const style = document.createElement('style');
+style.textContent = `
+.pltr {
+  background-color: red;
+  width: 0;
+  height: 2px;
+  position: fixed;
+  top: 0;
+  z-index: 99999999;
+}`;
+document.head.appendChild(style);
 
 const bodyNode = document.body;
 const progressNode = document.createElement('div');
