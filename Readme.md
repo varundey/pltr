@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/varundey/pltr/tree/master.svg?style=svg)](https://circleci.com/gh/varundey/pltr/tree/master)
+[![Build and Test](https://github.com/varundey/pltr/actions/workflows/build.yml/badge.svg)](https://github.com/varundey/pltr/actions/workflows/build.yml)
 
 # pltr
 
