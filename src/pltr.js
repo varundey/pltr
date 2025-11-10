@@ -5,7 +5,9 @@ style.textContent = `
   background-color: red;
   width: 0;
   height: 2px;
+  overflow-x: visible;
   position: fixed;
+  left: 0;
   top: 0;
   z-index: 99999999;
 }`;
@@ -30,7 +32,7 @@ const calculateProgress = () => {
 };
 
 const updateProgress = (progress) => {
-  pltrNode.style.width = `${progress}%`;
+  pltrNode.style.width = `${progress}vw`;
 };
 
 updateProgress(calculateProgress());
