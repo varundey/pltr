@@ -12,4 +12,4 @@ zip:
 build-zip: build zip
 
 clean:
-	rm -rf dist/ 
+	rm -rf dist/
