@@ -54,8 +54,7 @@ You can build from the source. This is recommended if you want to add some chang
 git clone https://github.com/varundey/pltr.git
 cd pltr
 npm i
-npm run dev      # for development build
-npm run build    # for minified, production build
+npm run build
 ```
 You will get the bundled extension inside `dist/pltr`. Follow the guidelines for your browser on how to side load the extension
 - [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Distribution_options/Sideloading_add-ons)

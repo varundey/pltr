@@ -1,21 +1,24 @@
 // Add progress bar styles
 const style = document.createElement('style');
+const height = '2px';
 style.textContent = `
-.pltr {
+#pltr {
   background-color: red;
   width: 0;
-  height: 2px;
+  min-height: ${height};
+  max-height: ${height};
+  overflow-x: visible;
   position: fixed;
+  left: 0;
   top: 0;
   z-index: 99999999;
 }`;
 document.head.appendChild(style);
 
-const bodyNode = document.body;
 const progressNode = document.createElement('div');
-progressNode.setAttribute('class', 'pltr');
-bodyNode.insertBefore(progressNode, bodyNode.firstChild);
-const pltrNode = document.querySelector('.pltr');
+progressNode.setAttribute('id', 'pltr');
+document.body.appendChild(progressNode);
+const pltrNode = document.getElementById('pltr');
 
 /**
  * Formula at the bottom of the page
@@ -30,7 +33,7 @@ const calculateProgress = () => {
 };
 
 const updateProgress = (progress) => {
-  pltrNode.style.width = `${progress}%`;
+  pltrNode.style.width = `${progress}vw`;
 };
 
 updateProgress(calculateProgress());
